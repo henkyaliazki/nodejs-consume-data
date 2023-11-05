@@ -5,7 +5,7 @@ const {
   USER_SERVICE_PORT =5000,
 } = process.env
 
-const orderService = `http:\\localhost:${ORDER_SERVICE_PORT}`
+const orderService = `http:\\localhost:${ORDER_SERVICE_PORT}`;
 const userService = `http:\\localhost:${USER_SERVICE_PORT}`;
 
 
@@ -16,7 +16,7 @@ const init = async () => {
   });
   await server.start();
   console.log(`Server berjalan pada ${server.info.uri}`);
-  
+
   server.route([
     {
       method: 'GET',
